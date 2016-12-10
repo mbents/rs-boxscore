@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="boxscoreApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Boxscores</title>
+    <link href="content/css/site.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/core/global.js"></script>
+    <script type="text/javascript" src="app/core/model.js"></script>
+    <script type="text/javascript" src="app/main/main.module.js"></script>
+    <script type="text/javascript" src="app/boxscore/boxscore.module.js"></script>
+    <script type="text/javascript" src="app/services/services.module.js"></script>
+    <script type="text/javascript" src="app/services/boxscore.service.js"></script>
+    <script type="text/javascript" src="app/widgets/widgets.module.js"></script>
+    <script type="text/javascript" src="app/widgets/gamepicker.directive.js"></script>
+    <script type="text/javascript" src="app/app.module.js"></script>
+    <script type="text/javascript" src="app/main/main.controller.js"></script>
+    <script type="text/javascript" src="app/boxscore/boxscore.controller.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <gamepicker></gamepicker>
+            </div>
+            <div class="col-sm-10">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

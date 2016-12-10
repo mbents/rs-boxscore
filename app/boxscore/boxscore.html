@@ -1,0 +1,154 @@
+﻿<div class="container-fluid" ng-show="boxscore">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>{{boxscore.visiting_team}}&nbsp;<span>({{boxscore.vis_starting_pitcher}})</span> @ {{boxscore.home_team}}&nbsp;<span>({{boxscore.home_starting_pitcher}})</span></h3>
+            <h6>{{boxscore.date}}</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>R</td>
+                        <td>H</td>
+                        <td>E</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{boxscore.visiting_team}}</td>
+                        <td>{{boxscore.visitor_final_score}}</td>
+                        <td>{{boxscore.visitor_hits}}</td>
+                        <td>{{boxscore.visitor_errors}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_team}}</td>
+                        <td>{{boxscore.home_final_score}}</td>
+                        <td>{{boxscore.home_hits}}</td>
+                        <td>{{boxscore.home_errors}}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">WP:&nbsp;{{boxscore.winning_pitcher}}</td>
+                        <td colspan="2">LP:&nbsp;{{boxscore.losing_pitcher}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <!--visiting team lineup-->
+        <div class="col-sm-2">
+            <table>
+                <thead>
+                    <tr>
+                        <td>{{boxscore.visiting_team}}</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_1}}, {{boxscore.visitor_position_1}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_2}}, {{boxscore.visitor_position_2}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_3}}, {{boxscore.visitor_position_3}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_4}}, {{boxscore.visitor_position_4}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_5}}, {{boxscore.visitor_position_5}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_6}}, {{boxscore.visitor_position_6}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_7}}, {{boxscore.visitor_position_7}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_8}}, {{boxscore.visitor_position_8}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.visitor_batter_9}}, {{boxscore.visitor_position_9}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--home team lineup-->
+        <div class="col-sm-2">
+            <table>
+                <thead>
+                    <tr>
+                        <td>{{boxscore.home_team}}</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{boxscore.home_batter_1}}, {{boxscore.home_position_1}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_2}}, {{boxscore.home_position_2}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_3}}, {{boxscore.home_position_3}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_4}}, {{boxscore.home_position_4}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_5}}, {{boxscore.home_position_5}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_6}}, {{boxscore.home_position_6}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_7}}, {{boxscore.home_position_7}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_8}}, {{boxscore.home_position_8}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{boxscore.home_batter_9}}, {{boxscore.home_position_9}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+         
+    <div class="row">
+        <div class="col-sm-12">
+            <!--game information (move this to the top?)-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+    </div>
+</div>

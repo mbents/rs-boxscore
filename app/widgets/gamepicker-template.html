@@ -1,0 +1,26 @@
+Team: 
+<select ng-model="main.selectedTeam">
+    <option ng-repeat="team in main.teams">
+        {{team}}
+    </option>
+</select>
+<br />
+Year: 
+<select ng-model="main.selectedYear">
+    <option ng-repeat="year in main.years(1921, 2014)">
+        {{year}}
+    </option>
+</select>
+<br />
+<input type="submit" value="Submit" ng-click="getBoxscore()" />
+<br />
+<table ng-show="main.games && main.games.length > 0">
+    <thead>
+        <tr>
+            <td>Games</td>
+        </tr>
+    </thead>
+    <tr ng-repeat="x in main.games">
+        <td><a ng-href="#/boxscore/{{x.game_id}}">{{x.game_id}}</a></td>
+    </tr>
+</table>
