@@ -94,3 +94,12 @@ function getBoxscoreModel() {
         home_position_9: ''
     });
 }
+
+function getPersonModel() {
+    return new Object({
+        last_name: '',
+        first_name: '',
+        id: '',
+        debut: ''
+    });
+}
