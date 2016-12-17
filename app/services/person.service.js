@@ -29,7 +29,7 @@
 
         svc.getPersonDataById = function (id) {
             return svc.personData.find(function (item) {
-                return item.id == id;
+                return item.ID == id;
             });
         }
 

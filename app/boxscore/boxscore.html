@@ -1,8 +1,8 @@
 ﻿<div class="container-fluid" ng-show="boxscore">
     <div class="row">
         <div class="col-sm-12">
-            <h3>{{boxscore.visiting_team}}&nbsp;<span>({{boxscore.vis_starting_pitcher}})</span> @ {{boxscore.home_team}}&nbsp;<span>({{boxscore.home_starting_pitcher}})</span></h3>
-            <h6>{{boxscore.date}}</h6>
+            <h3>{{boxscore.visiting_team}}&nbsp;<span>({{boxscore.vis_starting_pitcher | namelookup}})</span> @ {{boxscore.home_team}}&nbsp;<span>({{boxscore.home_starting_pitcher | namelookup}})</span></h3>
+            <h6>{{boxscore.date}}</h6> <!--TODO: create filter to parse this into more readable date-->
         </div>
     </div>
     <div class="row">
@@ -32,8 +32,8 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="2">WP:&nbsp;{{boxscore.winning_pitcher}}</td>
-                        <td colspan="2">LP:&nbsp;{{boxscore.losing_pitcher}}</td>
+                        <td colspan="2">WP:&nbsp;{{boxscore.winning_pitcher | namelookup}}</td>
+                        <td colspan="2">LP:&nbsp;{{boxscore.losing_pitcher | namelookup}}</td>
                     </tr>
                 </tfoot>
             </table>
@@ -50,31 +50,31 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{boxscore.visitor_batter_1}}, {{boxscore.visitor_position_1}}</td>
+                        <td>{{boxscore.visitor_batter_1 | namelookup}}, {{boxscore.visitor_position_1}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_2}}, {{boxscore.visitor_position_2}}</td>
+                        <td>{{boxscore.visitor_batter_2 | namelookup}}, {{boxscore.visitor_position_2}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_3}}, {{boxscore.visitor_position_3}}</td>
+                        <td>{{boxscore.visitor_batter_3 | namelookup}}, {{boxscore.visitor_position_3}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_4}}, {{boxscore.visitor_position_4}}</td>
+                        <td>{{boxscore.visitor_batter_4 | namelookup}}, {{boxscore.visitor_position_4}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_5}}, {{boxscore.visitor_position_5}}</td>
+                        <td>{{boxscore.visitor_batter_5 | namelookup}}, {{boxscore.visitor_position_5}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_6}}, {{boxscore.visitor_position_6}}</td>
+                        <td>{{boxscore.visitor_batter_6 | namelookup}}, {{boxscore.visitor_position_6}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_7}}, {{boxscore.visitor_position_7}}</td>
+                        <td>{{boxscore.visitor_batter_7 | namelookup}}, {{boxscore.visitor_position_7}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_8}}, {{boxscore.visitor_position_8}}</td>
+                        <td>{{boxscore.visitor_batter_8 | namelookup}}, {{boxscore.visitor_position_8}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.visitor_batter_9}}, {{boxscore.visitor_position_9}}</td>
+                        <td>{{boxscore.visitor_batter_9 | namelookup}}, {{boxscore.visitor_position_9}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -90,31 +90,31 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{boxscore.home_batter_1}}, {{boxscore.home_position_1}}</td>
+                        <td>{{boxscore.home_batter_1 | namelookup}}, {{boxscore.home_position_1}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_2}}, {{boxscore.home_position_2}}</td>
+                        <td>{{boxscore.home_batter_2 | namelookup}}, {{boxscore.home_position_2}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_3}}, {{boxscore.home_position_3}}</td>
+                        <td>{{boxscore.home_batter_3 | namelookup}}, {{boxscore.home_position_3}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_4}}, {{boxscore.home_position_4}}</td>
+                        <td>{{boxscore.home_batter_4 | namelookup}}, {{boxscore.home_position_4}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_5}}, {{boxscore.home_position_5}}</td>
+                        <td>{{boxscore.home_batter_5 | namelookup}}, {{boxscore.home_position_5}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_6}}, {{boxscore.home_position_6}}</td>
+                        <td>{{boxscore.home_batter_6 | namelookup}}, {{boxscore.home_position_6}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_7}}, {{boxscore.home_position_7}}</td>
+                        <td>{{boxscore.home_batter_7 | namelookup}}, {{boxscore.home_position_7}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_8}}, {{boxscore.home_position_8}}</td>
+                        <td>{{boxscore.home_batter_8 | namelookup}}, {{boxscore.home_position_8}}</td>
                     </tr>
                     <tr>
-                        <td>{{boxscore.home_batter_9}}, {{boxscore.home_position_9}}</td>
+                        <td>{{boxscore.home_batter_9 | namelookup}}, {{boxscore.home_position_9}}</td>
                     </tr>
                 </tbody>
             </table>
