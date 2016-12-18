@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h3>{{boxscore.visiting_team}}&nbsp;<span>({{boxscore.vis_starting_pitcher | namelookup}})</span> @ {{boxscore.home_team}}&nbsp;<span>({{boxscore.home_starting_pitcher | namelookup}})</span></h3>
-            <h6>{{boxscore.date}}</h6> <!--TODO: create filter to parse this into more readable date-->
+            <h6>{{boxscore.date | dateparser | date: 'MMMM dd, yyyy'}}</h6>
         </div>
     </div>
     <div class="row">
